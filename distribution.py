@@ -11,13 +11,10 @@ print('The distribution of characters in "' + text + '" is: ')
 
 import string
 alphabet = string.ascii_lowercase
-print(list(alphabet))
 
-def check_freq(str):
-    freq = {}
-    for c in str:
-       freq[c] = str.count(c)
-    return freq
-
-numberofletters = check_freq(text)
-print(numberofletters)
+for x in list(alphabet):
+    if x in str(text):
+        print(x*text.count(x))
+            
+def compare(a, b):
+    return b > a
