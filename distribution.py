@@ -15,5 +15,7 @@ alphabet = string.ascii_lowercase
 for x in list(alphabet):
     if x in str(text):
         print(list(x*text.count(x) + str(len(list(x*text.count(x))))))
-        if list(x*text.count(x) + str(len(list(x*text.count(x)))))[-1] == 3:
-            print("true")
+        """
+        mylist = ''.join(list(x*text.count(x) + str(len(list(x*text.count(x)))))[-1])
+        print(mylist)
+        """
