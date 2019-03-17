@@ -22,8 +22,14 @@ alphabet = string.ascii_lowercase
 
 for x in list(alphabet):
     if x in str(text):
-        mylist = (x*len(list(x*text.count(x))))
-        print(mylist)
+        mylist = (x*text.count(x))
+        #print(mylist)
+        mylist2 = list(x + str(len(list(x*text.count(x)))))
+        print(mylist2)
+        #print(list(x*text.count(x) + str(len(list(x*text.count(x))))))
+        
+        
+        
         
 def compare(a, b):
     """
@@ -48,6 +54,6 @@ def bsort(seq, cmp):
                     seq[index-1], seq[index] = seq[index], seq[index-1] # and swap it
 
     
-tosort = list(mylist)
+tosort = list(len(list(x*text.count(x))))
 bsort(tosort, compare)
 print(tosort)
